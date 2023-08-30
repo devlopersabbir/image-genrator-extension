@@ -1,0 +1,15 @@
+{
+  "name": "image-generator-extension",
+  "description": "AI image generator cors platfrom browser extension",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite build --watch --mode development",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
