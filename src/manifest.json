@@ -1,0 +1,22 @@
+{
+  "{{chrome}}.manifest_version": 3,
+  "{{firefox}}.manifest_version": 2,
+  "{{chrome}}.action": {
+    "default_popup": "src/popup.html"
+  },
+  "{{firefox}}.browser_action": {
+    "default_popup": "src/popup.html"
+  },
+  "background": {
+    "{{chrome}}.service_worker": "src/scripts/background.ts",
+    "{{firefox}}.scripts": ["src/scripts/background.ts"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/scripts/content.ts"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["tabs", "storage"]
+}
