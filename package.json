@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "vite build --watch --mode development",
+    "preview": "vite",
     "build": "tsc && vite build"
   },
   "dependencies": {

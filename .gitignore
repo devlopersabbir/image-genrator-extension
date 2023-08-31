@@ -3,3 +3,5 @@ dist
 /dist
 pnpm-lock.yaml
 /pnpm-lock.yaml
+temp_auto_push.bat
+temp_interactive_push.bat
